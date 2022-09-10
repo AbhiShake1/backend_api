@@ -1,0 +1,4 @@
+[run]
+omit =
+    backend_api/config/gunicorn.py
+    backend_api/__main__.py
