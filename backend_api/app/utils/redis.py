@@ -87,7 +87,7 @@ class RedisClient(object):
 
         cls.log.debug("Execute Redis PING command")
         try:
-            return await redis_client.ping()
+            return await cls.redis_client.ping()
         except RedisError as ex:
             cls.log.exception(
                 "Redis PING command finished with exception",
